@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beauty Supply">
+    <meta name="author" content="Paul Duong">
+
+    {% load static %}
+    <!-- <link rel="icon" /> -->
+    <link rel="stylesheet" href="{% static 'css/base.min.css' %}">
+
+    <title>{% block title %}Document{% endblock %}</title>
+    
+</head>
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog/">test</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
