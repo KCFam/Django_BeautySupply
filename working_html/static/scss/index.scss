@@ -1,0 +1,59 @@
+$bg-color: #363636;
+$primary-color: green;
+$gold-gradient: linear-gradient(
+  to bottom right,
+  #bf953f,
+  #fcf6ba,
+  #b38728,
+  #fbf5b7,
+  #aa771c
+);
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.text-gold-gradient {
+  background: $gold-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.input-no-border {
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Be Vietnam", sans-serif;
+  position: relative;
+  background-color: $bg-color;
+}
+
+.wrapper {
+  background-image: url("../images/Login.PNG");
+  background-repeat: no-repeat;
+  min-height: 100%;
+  min-width: 375px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  #login-form {
+    .username {
+      position: absolute;
+      top: 270px;
+      left: 58px;
+      width: 260px;
+
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+}
